@@ -1,0 +1,143 @@
+.pageWrap {
+  display: grid;
+  gap: 14px;
+  padding: 0 20px;
+}
+
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  color: #111827;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: #111827;
+  color: #fff;
+  border-color: #111827;
+}
+
+.btn--secondary:hover,
+.btn--primary:hover {
+  opacity: 0.9;
+}
+
+.inputBar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.textInput,
+.selectInput {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  color: #111827;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 12px;
+}
+
+.roleHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.roleTitle {
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.tableCard {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 32px 1fr 64px;
+  gap: 8px;
+  padding: 10px;
+  border-bottom: 1px solid #f3f4f6;
+  align-items: center;
+}
+
+.tableHead {
+  background: #f9fafb;
+  font-weight: 700;
+}
+
+.emptyRow {
+  padding: 14px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.dragHandle::before {
+  content: "⋮⋮";
+  color: #9ca3af;
+}
+
+.iconBtn {
+  appearance: none;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 8px;
+  width: 36px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.iconBtn:hover {
+  background: #f9fafb;
+}
+
+.icon-trash::before {
+  content: "🗑️";
+}
+
+.alert {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.loading {
+  color: #6b7280;
+}
+
+.visuallyHidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}

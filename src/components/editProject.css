@@ -1,0 +1,148 @@
+/* Full width layout */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f9f9f9;
+}
+
+.todo-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 20px 30px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  color: #222;
+}
+
+
+.edit-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 10px;
+  width: 100%;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.edit-title:focus {
+  border-color: #c6e1ff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.4);
+}
+
+.todo-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.todo-table th {
+  background-color: #c6e1ff;
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  padding: 10px;
+  font-size: 0.95rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.todo-table th:first-child {
+  border-top-left-radius: 5px;
+}
+
+.todo-table th:last-child {
+  border-top-right-radius: 5px;
+}
+
+.todo-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.edit-task-box,
+.dropdown,
+.calendar-input,
+.note-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.edit-task-box:focus,
+.dropdown:focus,
+.calendar-input:focus,
+.note-textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.4);
+}
+
+.note-textarea {
+  resize: vertical;
+  min-height: 40px;
+}
+
+.priority {
+  font-weight: 600;
+}
+
+.back-btn,
+.del-btn,
+.save-btn {
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.back-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.del-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.back-btn:hover {
+  background-color: #5a6268;
+}
+
+.del-btn:hover {
+  background-color: #c82333;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.todo-table button {
+  font-size: 0.85rem;
+}
+
